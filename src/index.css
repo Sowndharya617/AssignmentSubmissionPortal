@@ -1,0 +1,120 @@
+@import "tailwindcss";
+/* 2. Define Custom Properties (Variables) and Base Styles */
+:root {
+  /* Define your custom color palette */
+  --dark-purple: #331B3F;
+  --mild-green: #ACC7B4;
+  --text-light: #f0f0f0; 
+  --text-dark: #212121;  
+  
+  /* Define a modern font stack */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: var(--dark-purple);
+  /* Removed background color from here to allow Tailwind to control it */
+  color: var(--dark-purple); 
+
+  /* Improve font rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Body and Layout Styling */
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('https://media.istockphoto.com/id/1156171081/photo/hotel-or-office-lobby-blur-background-interior-view-toward-reception-hall-modern-luxury-white.jpg?b=1&s=612x612&w=0&k=20&c=T4XAQkGlCUBsx--6S29FpxxsNnjclwQsYwehIU1L5-U=');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 4. Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-purple);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--dark-purple);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: #000000;
+  border-bottom-color: var(--dark-purple);
+}
+
+/* 5. Modern Button Styling - SWAPPED COLORS */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text-light);
+  background-color: var(--dark-purple);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  filter: brightness(1.2);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-color: var(--dark-purple);
+}
+
+/* 6. Marquee Animation for Login Page (Top Banner Style) */
+.marquee-container-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 12px 0;
+  background-color: rgba(219, 211, 211, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(4px);
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite; /* Slower animation */
+  color: rgb(9, 8, 8); /* White text for better contrast */
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
