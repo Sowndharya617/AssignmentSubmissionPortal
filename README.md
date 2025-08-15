@@ -1,58 +1,72 @@
-# University Assignment Portal 🎓
+<h1 align="center">🎓 University Assignment Portal</h1>
+<p align="center">
+A centralized portal for managing university assignments with role-based access for Admins, Staff/Instructors, and Students.
+</p>
 
-A full-featured **web application** designed to streamline the assignment process in a university environment.  
-The portal allows instructors to create and manage assignments, while students can view assignments, submit their work, and check their grades.  
+<p align="center">
+  <strong>Frontend:</strong> React (Vite) • HTML • CSS • JavaScript &nbsp;|&nbsp;
+  <strong>Backend:</strong> Node.js • Express.js &nbsp;|&nbsp;
+  <strong>Database:</strong> MySQL
+</p>
 
-It supports **multiple user roles** — Admin, Staff/Instructor, and Student — providing a centralized and efficient platform for academic tasks.
+---
+
+## 📊 Project Overview
+
+| Item | Details |
+|-----:|:--------|
+| **🎯 Purpose** | Streamline assignment posting, submission, and grading in one platform |
+| **🧑‍🤝‍🧑 Roles** | Admin, Staff/Instructor, Student |
+| **🔒 Security** | User authentication & role-based permissions |
+| **🗄️ Persistence** | All data stored in MySQL |
 
 ---
 
 ## ✨ Key Features
 
-- **User Authentication** – Secure login for students, instructors, and administrators.
-- **Role-Based Access Control** – Different functionalities for each role.
-- **Admin Dashboard** – Manage user accounts and create classes.
-- **Assignment Management** – Instructors can post, edit, and manage assignments.
-- **Assignment Submission** – Students can submit assignments with GitHub & live demo links.
-- **Grading System** – Instructors can grade submissions.
-- **Submission Status** – Students can track submission status and grades.
-- **Data Persistence** – All data is stored in **MySQL**.
+- 🔑 **User Authentication** – Secure login for all roles  
+- 🎭 **Role-Based Access** – Admin, Staff, and Student dashboards  
+- 📋 **Assignment Management** – Post, edit, and manage deadlines  
+- 📤 **Submission System** – Students attach GitHub repo & live demo links  
+- 📝 **Grading** – Instructors review and grade submissions  
+- 📊 **Status Tracking** – Students track submissions and view grades
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **Frontend**: React, HTML, CSS, JavaScript (Vite)
-- **Backend**: Node.js, Express.js
-- **Database**: MySQL
+| Frontend | Backend | Database |
+|----------|---------|----------|
+| React (Vite), HTML, CSS, JavaScript | Node.js, Express.js | MySQL |
 
 ---
 
 ## 📂 Folder Structure
 
+````text
 /AssignmentSubmissionPortal
 |-- /PortalScreenShorts
-| |-- AdminPage.jpg
-| |-- AnsSubmissionPage.jpg
-| |-- LoginPage.jpg
-| |-- CreateClassPage.jpg
-| |-- PostAssignmentPage.jpg
-| |-- GradingPage.jpg
-| |-- ViewGradePage.jpg
-| |-- DatabaseSchema.jpg
+|   |-- AdminPage.jpg
+|   |-- AnsSubmissionPage.jpg
+|   |-- LoginPage.jpg
+|   |-- CreateClassPage.jpg
+|   |-- PostAssignmentPage.jpg
+|   |-- GradingPage.jpg
+|   |-- ViewGradePage.jpg
+|   |-- DatabaseSchema.jpg
 |-- /client
-| |-- /src
-| | |-- /components
-| | |-- /pages
-| | |-- App.jsx
-| | |-- index.css
-| |-- index.html
+|   |-- /src
+|   |   |-- /components
+|   |   |-- /pages
+|   |   |-- App.jsx
+|   |   |-- index.css
+|   |-- index.html
 |-- /server
-| |-- /routes
-| |-- /controllers
-| |-- /models
-| |-- server.js
+|   |-- /routes
+|   |-- /controllers
+|   |-- /models
+|   |-- server.js
 |-- /database
-| |-- schema.sql
+|   |-- schema.sql
 |-- .gitignore
 |-- README.md
