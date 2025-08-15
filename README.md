@@ -127,15 +127,23 @@ AssignmentSubmissionPortal/
 │   └── DatabaseSchema.jpg
 │
 └── README.md
-# Server
+
+# ===============================
+# Server Configuration
+# ===============================
 server.port=8080
 
-# MySQL
+# ===============================
+# MySQL Database Configuration
+# ===============================
 spring.datasource.url=jdbc:mysql://localhost:3306/university_portal?useSSL=false&serverTimezone=UTC
 spring.datasource.username=YOUR_DB_USER
 spring.datasource.password=YOUR_DB_PASSWORD
 
-# JPA / Hibernate
+# ===============================
+# JPA / Hibernate Configuration
+# ===============================
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
