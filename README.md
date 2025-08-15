@@ -30,3 +30,29 @@ It supports **multiple user roles** — Admin, Staff/Instructor, and Student —
 
 ## 📂 Folder Structure
 
+/AssignmentSubmissionPortal
+|-- /PortalScreenShorts
+| |-- AdminPage.jpg
+| |-- AnsSubmissionPage.jpg
+| |-- LoginPage.jpg
+| |-- CreateClassPage.jpg
+| |-- PostAssignmentPage.jpg
+| |-- GradingPage.jpg
+| |-- ViewGradePage.jpg
+| |-- DatabaseSchema.jpg
+|-- /client
+| |-- /src
+| | |-- /components
+| | |-- /pages
+| | |-- App.jsx
+| | |-- index.css
+| |-- index.html
+|-- /server
+| |-- /routes
+| |-- /controllers
+| |-- /models
+| |-- server.js
+|-- /database
+| |-- schema.sql
+|-- .gitignore
+|-- README.md
