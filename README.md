@@ -151,4 +151,31 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
+---
+## 📸 Screenshots
+
+#### 🔑 Login Page
+![Login Page](PortalScreenShorts/LoginPage.jpg)
+
+#### 🛠️ Admin Dashboard
+![Admin Dashboard](PortalScreenShorts/AdminPage.jpg)
+
+#### 🎓 Staff Portal – Creating a Class
+![Create Class Page](PortalScreenShorts/CreateClassPage.jpg)
+
+#### 📤 Staff Portal – Posting an Assignment
+![Post Assignment Page](PortalScreenShorts/PostAssignmentPage.jpg)
+
+#### ✅ Staff Portal – Grading Submissions
+![Grading Page](PortalScreenShorts/GradingPage.jpg)
+
+#### 📝 Student Portal – Submitting an Assignment
+![Assignment Submission Page](PortalScreenShorts/AnsSubmissionPage.jpg)
+
+#### 📊 Student Portal – Viewing Grades
+![View Grade Page](PortalScreenShorts/ViewGradePage.jpg)
+
+#### 🗄️ Database Schema
+![Database Schema](PortalScreenShorts/DatabaseSchema.jpg)
+
 
