@@ -155,27 +155,29 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ## 📸 Screenshots
 
 #### 🔑 Login Page
-![Login Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/LoginPage.jpg)
+![Login Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/LoginPage.png)
 
 #### 🛠️ Admin Dashboard
-![Admin Dashboard](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/AdminPage.jpg)
+![Admin Dashboard](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/AdminPage.png)
 
 #### 🎓 Staff Portal – Creating a Class
-![Create Class Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/CreateClassPage.jpg)
+![Create Class Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/CreatingClass3.png)
 
 #### 📤 Staff Portal – Posting an Assignment
-![Post Assignment Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/PostAssignmentPage.jpg)
+![Post Assignment Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/AssignmentPosting5.png)
 
-#### ✅ Staff Portal – Grading Submissions
-![Grading Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/GradingPage.jpg)
+#### 📝 Student Portal – Viewing Assignments
+![Student Task View Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/StudentTaskView7.png)
 
-#### 📝 Student Portal – Submitting an Assignment
-![Assignment Submission Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/AnsSubmissionPage.jpg)
+#### 🎉 Student Portal – Submission Confirmation
+![Submission Confirmation](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/Confirmation10.png)
+
+#### ✅ Staff Portal – Viewing Submissions
+![Staff Viewing Submissions](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/StaffAnsView12.png)
+
+####  grading Portal – Grading a Submission
+![Grading Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/Grading13.png)
 
 #### 📊 Student Portal – Viewing Grades
-![View Grade Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/ViewGradePage.jpg)
-
-#### 🗄️ Database Schema
-![Database Schema](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/DatabaseSchema.jpg)
-
+![View Grade Page](https://raw.githubusercontent.com/Sowndharya617/AssignmentSubmissionPortal/main/PortalScreenShorts/Grade%20View15.png)
 
