@@ -1,11 +1,11 @@
 <h1 align="center">🎓 University Assignment Portal</h1>
 <p align="center">
-A centralized portal for managing university assignments with role-based access for Admins, Staff/Instructors, and Students.
+A centralized portal for managing university assignments with role-based access for <b>Admins</b>, <b>Staff/Instructors</b>, and <b>Students</b>.
 </p>
 
 <p align="center">
   <strong>Frontend:</strong> React (Vite) • HTML • CSS • JavaScript &nbsp;|&nbsp;
-  <strong>Backend:</strong> Node.js • Express.js &nbsp;|&nbsp;
+  <strong>Backend:</strong> Spring Boot (Java) • Spring Web • Spring Data JPA • CORS config &nbsp;|&nbsp;
   <strong>Database:</strong> MySQL
 </p>
 
@@ -17,56 +17,113 @@ A centralized portal for managing university assignments with role-based access 
 |-----:|:--------|
 | **🎯 Purpose** | Streamline assignment posting, submission, and grading in one platform |
 | **🧑‍🤝‍🧑 Roles** | Admin, Staff/Instructor, Student |
-| **🔒 Security** | User authentication & role-based permissions |
-| **🗄️ Persistence** | All data stored in MySQL |
+| **🔒 Security** | Auth endpoints + role-based routing on the client |
+| **🗄️ Persistence** | MySQL via Spring Data JPA |
+| **🌐 CORS** | Enabled via `WebConfig.java` (frontend ↔ backend) |
 
 ---
 
 ## ✨ Key Features
 
-- 🔑 **User Authentication** – Secure login for all roles  
-- 🎭 **Role-Based Access** – Admin, Staff, and Student dashboards  
-- 📋 **Assignment Management** – Post, edit, and manage deadlines  
-- 📤 **Submission System** – Students attach GitHub repo & live demo links  
-- 📝 **Grading** – Instructors review and grade submissions  
-- 📊 **Status Tracking** – Students track submissions and view grades
+- 🔑 **Authentication** – Login for all roles  
+- 🎭 **Role-Based Access** – Separate dashboards & privileges  
+- 📋 **Assignments** – Create, edit, publish, set deadlines  
+- 📤 **Submissions** – Students submit with GitHub & Live Demo links  
+- 📝 **Grading** – Staff reviews and assigns grades  
+- 📊 **Status & Results** – Students see submission state & grades  
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 | Frontend | Backend | Database |
 |----------|---------|----------|
-| React (Vite), HTML, CSS, JavaScript | Node.js, Express.js | MySQL |
+| React (Vite), React Router | Spring Boot (Web, JPA), CORS | MySQL |
 
 ---
 
 ## 📂 Folder Structure
 
 ````text
-/AssignmentSubmissionPortal
-|-- /PortalScreenShorts
-|   |-- AdminPage.jpg
-|   |-- AnsSubmissionPage.jpg
-|   |-- LoginPage.jpg
-|   |-- CreateClassPage.jpg
-|   |-- PostAssignmentPage.jpg
-|   |-- GradingPage.jpg
-|   |-- ViewGradePage.jpg
-|   |-- DatabaseSchema.jpg
-|-- /client
-|   |-- /src
-|   |   |-- /components
-|   |   |-- /pages
-|   |   |-- App.jsx
-|   |   |-- index.css
-|   |-- index.html
-|-- /server
-|   |-- /routes
-|   |-- /controllers
-|   |-- /models
-|   |-- server.js
-|-- /database
-|   |-- schema.sql
-|-- .gitignore
-|-- README.md
+AssignmentSubmissionPortal/
+│
+├── 📁 Backend (Spring Boot)
+│   ├── src/main/java/com/example/university
+│   │   ├── 📁 config
+│   │   │   └── WebConfig.java
+│   │   │
+│   │   ├── 📁 controller
+│   │   │   ├── AdminController.java
+│   │   │   ├── AuthController.java
+│   │   │   ├── StaffController.java
+│   │   │   └── StudentController.java
+│   │   │
+│   │   ├── 📁 exception
+│   │   │   └── GlobalExceptionHandler.java
+│   │   │
+│   │   ├── 📁 model
+│   │   │   ├── AddStudentsRequest.java
+│   │   │   ├── Assignment.java
+│   │   │   ├── ClassDetailsDTO.java
+│   │   │   ├── Course.java
+│   │   │   ├── CreateClassRequest.java
+│   │   │   ├── GradeSubmissionRequest.java
+│   │   │   ├── LoginRequest.java
+│   │   │   ├── LoginResponse.java
+│   │   │   ├── StudentAssignmentDTO.java
+│   │   │   ├── StudentDTO.java
+│   │   │   ├── StudentProfileDTO.java
+│   │   │   ├── Submission.java
+│   │   │   ├── SubmissionStatusDTO.java
+│   │   │   └── User.java
+│   │   │
+│   │   ├── 📁 repository
+│   │   │   ├── AssignmentRepository.java
+│   │   │   ├── CourseRepository.java
+│   │   │   ├── StudentRepository.java
+│   │   │   ├── SubmissionRepository.java
+│   │   │   └── UserRepository.java
+│   │   │
+│   │   └── UniversitySubmissionSystemApplication.java
+│   │
+│   ├── src/main/resources
+│   │   ├── application.properties
+│   │   └── schema.sql
+│   │
+│   └── pom.xml
+│
+├── 📁 Frontend (React - Vite)
+│   ├── public/
+│   ├── src/
+│   │   ├── 📁 assets
+│   │   ├── 📁 components
+│   │   │   ├── AddStudentsModal.jsx
+│   │   │   ├── CreateClass.jsx
+│   │   │   ├── PostAssignment.jsx
+│   │   │   ├── ViewClasses.jsx
+│   │   │   └── ViewSubmissions.jsx
+│   │   ├── 📁 pages
+│   │   │   ├── AdminDashboard.jsx
+│   │   │   ├── AssignmentSubmissionView.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── StaffDashboard.jsx
+│   │   │   └── StudentDashboard.jsx
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   └── eslint.config.js
+│   ├── package.json
+│   └── vite.config.js
+│
+├── 📁 PortalScreenShorts
+│   ├── AdminPage.jpg
+│   ├── AnsSubmissionPage.jpg
+│   ├── LoginPage.jpg
+│   ├── CreateClassPage.jpg
+│   ├── PostAssignmentPage.jpg
+│   ├── GradingPage.jpg
+│   ├── ViewGradePage.jpg
+│   └── DatabaseSchema.jpg
+│
+└── README.md
