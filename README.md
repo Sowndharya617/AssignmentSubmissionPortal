@@ -1,12 +1,32 @@
-# React + Vite
+# University Assignment Portal 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured **web application** designed to streamline the assignment process in a university environment.  
+The portal allows instructors to create and manage assignments, while students can view assignments, submit their work, and check their grades.  
 
-Currently, two official plugins are available:
+It supports **multiple user roles** — Admin, Staff/Instructor, and Student — providing a centralized and efficient platform for academic tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **User Authentication** – Secure login for students, instructors, and administrators.
+- **Role-Based Access Control** – Different functionalities for each role.
+- **Admin Dashboard** – Manage user accounts and create classes.
+- **Assignment Management** – Instructors can post, edit, and manage assignments.
+- **Assignment Submission** – Students can submit assignments with GitHub & live demo links.
+- **Grading System** – Instructors can grade submissions.
+- **Submission Status** – Students can track submission status and grades.
+- **Data Persistence** – All data is stored in **MySQL**.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React, HTML, CSS, JavaScript (Vite)
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL
+
+---
+
+## 📂 Folder Structure
+
